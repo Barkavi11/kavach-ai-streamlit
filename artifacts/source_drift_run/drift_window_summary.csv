@@ -1,0 +1,2 @@
+window_id,start_row,stop_row_exclusive,records,status,suspend_auto_clearance,warning_feature_count,critical_feature_count,reasons,original_auto_accept_count,overridden_auto_accept_count
+1,0,1000,1000,GREEN,False,0,0,All immediate drift features are within limits.,795,0

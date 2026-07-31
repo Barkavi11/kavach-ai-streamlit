@@ -1,0 +1,21 @@
+{
+  "step": "18B",
+  "status": "completed",
+  "created_at_utc": "2026-07-30T09:35:54.689091+00:00",
+  "run_id": "drift_run_20260730T093553Z",
+  "inference_run": "artifacts/source_inference_run",
+  "inference_manifest_sha256": "84a0d0400f79baaaed1eaecfb6d9403ff33d0053b0ef27b25890a9633af19b5e",
+  "inference_results_parquet_sha256": "dc181d7b4648b184aeac2248ee074ede47df9f9da2fe554da66aa0f817fc4193",
+  "monitoring_contract": "provenance/redacted/hardened_monitoring_contract.json",
+  "monitoring_contract_sha256": "c07abf4c5003ccb9d57842e9331994e546cf9c991c0da63a4f07aff8c33c665c",
+  "feature_definitions_sha256": "e797d551fda87d132aada2d082b0c842b4829c4067005ebd20eb9c0a35e3ed52",
+  "reference_run_id": "validation_reference_20260730T083250Z",
+  "production_policy_sha256": "d3e47cc0836e080bbe9e3bc841457bdd151006b70e57a30145e45519e511beaf",
+  "model_checkpoint_sha256": "283487ce37d5eb0fbc2aa17ffdb8924069baeaca7c2c12a0175c95bcf82e2a33",
+  "state_file": "provenance/redacted/monitoring_state.json",
+  "state_updated": false,
+  "overall_monitoring_status": "GREEN",
+  "locked_test_used": false,
+  "model_weights_updated": false,
+  "production_policy_updated": false
+}

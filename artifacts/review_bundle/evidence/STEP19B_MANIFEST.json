@@ -1,0 +1,23 @@
+{
+  "step": "19B",
+  "status": "completed",
+  "created_at_utc": "2026-07-30T10:35:26.202810+00:00",
+  "source_inference_run": "artifacts/source_inference_run",
+  "checkpoint_sha256": "283487ce37d5eb0fbc2aa17ffdb8924069baeaca7c2c12a0175c95bcf82e2a33",
+  "policy_sha256": "d3e47cc0836e080bbe9e3bc841457bdd151006b70e57a30145e45519e511beaf",
+  "cases": 205,
+  "explanation_patch_size": 12,
+  "explanation_stride": 6,
+  "independent_evaluation_patch_size": 8,
+  "independent_evaluation_stride": 8,
+  "deletion_fractions": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "random_repeats": 20,
+  "bootstrap_replicates": 5000,
+  "overall_decision": "APPROVED_WITH_RESTRICTIONS",
+  "locked_test_used": false,
+  "output_directory": "artifacts/review_bundle/evidence"
+}

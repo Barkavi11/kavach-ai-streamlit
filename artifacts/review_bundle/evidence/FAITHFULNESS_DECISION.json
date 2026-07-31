@@ -1,0 +1,82 @@
+{
+  "step": "19B",
+  "status": "APPROVED_WITH_RESTRICTIONS",
+  "created_at_utc": "2026-07-30T10:35:26.202515+00:00",
+  "run_id": "faithfulness_20260730T103421Z",
+  "source_inference_run_id": "20260730T092737062758Z",
+  "eligible_cases_audited": 205,
+  "eligible_scope": "All ABSTAIN and ENGINEER_REVIEW cases",
+  "primary_method": "good_die_occlusion",
+  "gradcam_status": "REJECTED",
+  "good_die_occlusion_status": "APPROVED",
+  "consensus_map_status": "NOT_APPROVED",
+  "consensus_reason": "Consensus averaging is not independently faithful and can conceal disagreement between explanation methods.",
+  "production_display_policy": {
+    "primary_display": "good_die_occlusion",
+    "gradcam_display": "hidden",
+    "consensus_display": "hidden",
+    "mandatory_label": "Model-sensitivity explanation \u2014 engineering verification required",
+    "physical_root_cause_claimed": false
+  },
+  "method_decisions": [
+    {
+      "method": "gradcam",
+      "status": "REJECTED",
+      "cases": 205,
+      "primary_deletion_fraction": 0.2,
+      "top_minus_random_mean": 0.12841587267612053,
+      "top_minus_random_ci95_lower": 0.09174375376375185,
+      "top_minus_random_ci95_upper": 0.16703925765048494,
+      "top_minus_bottom_mean": 0.05657840975846661,
+      "top_minus_bottom_ci95_lower": -0.016522443704999862,
+      "top_minus_bottom_ci95_upper": 0.12938760408341923,
+      "top_beats_random_cases": 148,
+      "top_beats_random_rate": 0.7219512195121951,
+      "top_beats_random_wilson95_lower": 0.6569665327139411,
+      "top_beats_random_wilson95_upper": 0.7787707031484565,
+      "independent_tile_spearman_mean": 0.154905790049057,
+      "independent_tile_spearman_ci95_lower": 0.12931417614251675,
+      "independent_tile_spearman_ci95_upper": 0.18038068376295063,
+      "median_relative_top_drop": 0.05104326520495495,
+      "deletion_supported": false,
+      "independent_ranking_supported": true,
+      "predefined_acceptance_rule": "APPROVED requires lower 95% bootstrap bounds above zero for top-minus-random, top-minus-bottom, and independent tile Spearman, plus the lower 95% Wilson bound for the top-vs-random case win rate above 0.50. RESTRICTED means deletion passes but independent ranking does not. Otherwise REJECTED."
+    },
+    {
+      "method": "good_die_occlusion",
+      "status": "APPROVED",
+      "cases": 205,
+      "primary_deletion_fraction": 0.2,
+      "top_minus_random_mean": 0.655986809941855,
+      "top_minus_random_ci95_lower": 0.6160671628361695,
+      "top_minus_random_ci95_upper": 0.6996792956620211,
+      "top_minus_bottom_mean": 0.821686372810143,
+      "top_minus_bottom_ci95_lower": 0.7874287927503966,
+      "top_minus_bottom_ci95_upper": 0.8534495253429519,
+      "top_beats_random_cases": 201,
+      "top_beats_random_rate": 0.9804878048780488,
+      "top_beats_random_wilson95_lower": 0.9509127225603162,
+      "top_beats_random_wilson95_upper": 0.9923865682626762,
+      "independent_tile_spearman_mean": 0.5099311389093069,
+      "independent_tile_spearman_ci95_lower": 0.4913506344643827,
+      "independent_tile_spearman_ci95_upper": 0.5289155843749904,
+      "median_relative_top_drop": 0.9890800023619939,
+      "deletion_supported": true,
+      "independent_ranking_supported": true,
+      "predefined_acceptance_rule": "APPROVED requires lower 95% bootstrap bounds above zero for top-minus-random, top-minus-bottom, and independent tile Spearman, plus the lower 95% Wilson bound for the top-vs-random case win rate above 0.50. RESTRICTED means deletion passes but independent ranking does not. Otherwise REJECTED."
+    }
+  ],
+  "governance": {
+    "locked_test_used": false,
+    "model_weights_updated": false,
+    "production_policy_updated": false,
+    "production_routes_updated": false,
+    "thresholds_tuned_after_results": false,
+    "external_validation_claimed": false
+  },
+  "limitations": [
+    "Faithfulness is evaluated on validation-derived production-smoke cases.",
+    "The audit tests model sensitivity, not semiconductor process causality.",
+    "WM-811K lacks equipment, recipe, SPC, MES, maintenance, and lot-history variables."
+  ]
+}

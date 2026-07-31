@@ -1,0 +1,20 @@
+{
+  "step": "18B",
+  "status": "GREEN",
+  "created_at_utc": "2026-07-30T09:35:54.688450+00:00",
+  "run_id": "drift_run_20260730T093553Z",
+  "inference_run_id": "20260730T092737062758Z",
+  "windows_scored": 1,
+  "records_scored": 1000,
+  "window_size": 1000,
+  "suspend_auto_clearance": false,
+  "dry_run": true,
+  "effective_route_counts": {
+    "AUTO_ACCEPT": 795,
+    "ENGINEER_REVIEW": 147,
+    "ABSTAIN": 58
+  },
+  "overridden_auto_accept_records": 0,
+  "operational_action": "Continue frozen production routing and retain monitoring log.",
+  "locked_test_used": false
+}
